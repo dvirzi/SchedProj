@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Module5">
+</Property><Property Name="Solution File" Value="C:\HCU-6W2PQM1\D\Documents and Settings\212039854\My Documents\Programs-C#\SWE-346-51\Week10\Login\assignment.solution\Module5.sln">
+</Property><Property Name="Date" Value="Sunday, January 27, 2013">
+</Property><Property Name="Time" Value="19:41 PM">
+</Property></Properties><Event ErrorLevel="0" Project="Problem1" Source="Problem1\Problem1.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Problem1" Source="Problem1\Problem1.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="NameComposite" Source="NameComposite\NameComposite.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="NameComposite" Source="NameComposite\NameComposite.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Module5.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Module5.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Problem1" Source="Problem1\Problem1.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="NameComposite" Source="NameComposite\NameComposite.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

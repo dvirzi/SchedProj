@@ -1,0 +1,83 @@
+using System.Web.UI.WebControls;
+using SWE346.Module5.DomainObjects;
+using SWE346.Module5.Problem1.DomainObjects;
+
+namespace SWE346.Module5.Problem1.Forms
+{
+    /// <summary>
+    /// Backing class of the Account Manager web form
+    /// </summary>
+    public partial class AccountManager : System.Web.UI.Page {
+        protected AccountCollection Accounts { get; set;}
+
+        protected void Page_Load(object sender, System.EventArgs e) {
+            Accounts = GetAccounts();
+            if (Accounts == null) {
+                Accounts = new MockAccounts();
+                Session["Accounts"] = Accounts;
+                Accounts.SortByName();
+            }
+
+            if(!IsPostBack)
+                DataBind();
+        }
+
+        /// <summary>
+        /// Event handler for the Item Command
+        /// </summary>
+        ///<remarks>
+        /// This command is used to drive sorting
+        ///</remarks>
+        protected void accountList_ItemCommand(object source, ListViewCommandEventArgs e)
+        {
+            switch(e.CommandName){
+                case "SortName" :
+                    GetAccounts().SortByName();
+                    break;
+                case "SortBalance" :
+                    GetAccounts().SortByBalance();
+                    break;
+                default  :
+                    GetAccounts().SortByName(false);
+                    break;
+            }
+            DataBind();
+        }
+
+        /// <summary>
+        /// Event handler for the delete command
+        /// </summary>
+        protected void accountList_DeleteCommand(object source, ListViewDeleteEventArgs e)
+        {
+            GetAccounts().RemoveAt(e.ItemIndex);
+            DataBind();
+        }
+
+        /// <summary>
+        /// Event handler for the create button
+        /// </summary>
+        protected void btnCreate_Click(object sender, System.EventArgs e) {
+            GetAccounts().Add(new Account());
+            Context.Items["Account"] = Accounts[GetAccounts().Count - 1];
+            Server.Transfer("AccountEditor.aspx");
+        }
+
+        /// <summary>
+        /// Event handler for the edit command
+        /// </summary>
+        protected void accountList_EditCommand(object source, ListViewEditEventArgs e) {
+            Context.Items["Account"] = Accounts[e.NewEditIndex];
+            Server.Transfer("AccountEditor.aspx");
+        }
+
+        /// <summary>
+        /// Helper method to get the accounts collection
+        /// </summary>
+        /// <returns></returns>
+        protected AccountCollection GetAccounts(){
+            return Session["Accounts"] == null ? null : (AccountCollection) Session["Accounts"];    
+        }
+    }
+}
+
+

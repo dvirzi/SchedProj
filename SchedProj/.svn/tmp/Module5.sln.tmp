@@ -1,0 +1,43 @@
+<<<<<<< .mine
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Problem1", "Problem1\", "{088312CC-0F97-42B0-8F40-17C84D23905A}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/Problem1"
+		Debug.AspNetCompiler.PhysicalPath = "Problem1\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Problem1\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Problem1"
+		Release.AspNetCompiler.PhysicalPath = "Problem1\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Problem1\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2576"
+	EndProjectSection
+=======
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem1", "Problem1\Problem1.csproj", "{354083F9-9EBE-4580-9042-50FFEF9CCE2C}"
+>>>>>>> .r315
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{354083F9-9EBE-4580-9042-50FFEF9CCE2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{354083F9-9EBE-4580-9042-50FFEF9CCE2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{354083F9-9EBE-4580-9042-50FFEF9CCE2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{354083F9-9EBE-4580-9042-50FFEF9CCE2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

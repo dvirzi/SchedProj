@@ -1,0 +1,15 @@
+D:\Documents and Settings\212039854\My Documents\Docs\Champlain College\SWE-346-51\Week10\Login\assignment.solution\Problem1\bin\SWE346.Module5.Problem1.dll
+D:\Documents and Settings\212039854\My Documents\Docs\Champlain College\SWE-346-51\Week10\Login\assignment.solution\Problem1\bin\SWE346.Module5.Problem1.pdb
+D:\Documents and Settings\212039854\My Documents\Docs\Champlain College\SWE-346-51\Week10\Login\assignment.solution\Problem1\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\212039854\My Documents\Docs\Champlain College\SWE-346-51\Week10\Login\assignment.solution\Problem1\obj\Debug\SWE346.Module5.Problem1.dll
+D:\Documents and Settings\212039854\My Documents\Docs\Champlain College\SWE-346-51\Week10\Login\assignment.solution\Problem1\obj\Debug\SWE346.Module5.Problem1.pdb
+C:\HCU-6W2PQM1\D\Documents and Settings\212039854\My Documents\Programs-C#\SWE-346-51\Week10\Login\assignment.solution\Problem1\bin\SWE346.Module5.Problem1.dll
+C:\HCU-6W2PQM1\D\Documents and Settings\212039854\My Documents\Programs-C#\SWE-346-51\Week10\Login\assignment.solution\Problem1\bin\SWE346.Module5.Problem1.pdb
+C:\HCU-6W2PQM1\D\Documents and Settings\212039854\My Documents\Programs-C#\SWE-346-51\Week10\Login\assignment.solution\Problem1\obj\Debug\SWE346.Module5.Problem1.dll
+C:\HCU-6W2PQM1\D\Documents and Settings\212039854\My Documents\Programs-C#\SWE-346-51\Week10\Login\assignment.solution\Problem1\obj\Debug\SWE346.Module5.Problem1.pdb
+C:\HCU-6W2PQM1\D\Documents and Settings\212039854\My Documents\Programs-C#\SWE-346-51\Week10\Login\assignment.solution\Problem1\obj\Debug\Problem1.csprojResolveAssemblyReference.cache
+C:\Users\Dave\Documents\SDEV-435\SchedProj\Problem1\obj\Debug\SWE346.Module5.Problem1.dll
+C:\Users\Dave\Documents\SDEV-435\SchedProj\Problem1\obj\Debug\SWE346.Module5.Problem1.pdb
+C:\Users\Dave\Documents\SDEV-435\SchedProj\Problem1\bin\SWE346.Module5.Problem1.dll
+C:\Users\Dave\Documents\SDEV-435\SchedProj\Problem1\bin\SWE346.Module5.Problem1.pdb
+C:\Users\Dave\Documents\SDEV-435\SchedProj\Problem1\obj\Debug\Problem1.csprojResolveAssemblyReference.cache
