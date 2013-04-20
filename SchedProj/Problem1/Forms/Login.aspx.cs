@@ -113,7 +113,9 @@ namespace SWE346.Module5.Problem1.Forms
             else if (RadioButtonList1.SelectedIndex == 2) // secure SQL DB
             {
                 //string mySQLDB = @"D:\Documents and Settings\212039854\My Documents\Docs\Champlain College\SWE-346-51\Week10\Login\assignment.solution\Problem1\Users.mdb";
-                string mySQLDB = @"Problem1\Users.mdb";
+                //Server.MapPath("~\App_Data");
+                string mySQLDB = Server.MapPath(@"~\App_Data\Users.mdb");
+                //string mySQLDB = @"C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Problem1\App_Data\Users.mdb";
                 String CONNECTION_STRING = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source="+mySQLDB+";User Id=;Password=;";
                 DataSet ds = new DataSet();
                 using (OleDbConnection oConnection = new OleDbConnection(CONNECTION_STRING))
@@ -198,8 +200,16 @@ namespace SWE346.Module5.Problem1.Forms
         {
             string uName = txtUserName.Text;
             string uPass = txtPassword.Text;
-            if (AuthenticateUser (uName, uPass ))
+            if (AuthenticateUser(uName, uPass))
+            {
+                Session["LoginUser"] = uName;
                 FormsAuthentication.RedirectFromLoginPage(uName, false);
+            }
+        }
+
+        protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

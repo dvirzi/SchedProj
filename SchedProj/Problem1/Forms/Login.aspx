@@ -61,10 +61,10 @@
     </div>
 &nbsp;&nbsp;&nbsp;
     <div class="style4">
-        <asp:RadioButtonList ID="RadioButtonList1" runat="server">
-            <asp:ListItem Selected="True">UnSecure XML</asp:ListItem>
+        <asp:RadioButtonList ID="RadioButtonList1" runat="server" Enabled="False" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged" Visible="False">
+            <asp:ListItem>UnSecure XML</asp:ListItem>
             <asp:ListItem>Secure XML</asp:ListItem>
-            <asp:ListItem>Secure SQL DB</asp:ListItem>
+            <asp:ListItem Selected="True">Secure SQL DB</asp:ListItem>
         </asp:RadioButtonList>
         <br />
     </div>

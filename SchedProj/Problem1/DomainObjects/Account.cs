@@ -7,7 +7,7 @@ namespace SWE346.Module5.Problem1.DomainObjects  {
     public class Account {
         /// <summary>
         /// The name of the Account.
-        /// </summary>
+        /// </summary>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
         public string Name { get; set; }
 
         /// <summary>

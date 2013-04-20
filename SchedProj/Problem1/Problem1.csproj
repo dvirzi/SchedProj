@@ -64,18 +64,11 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\..\..\..\..\..\..\..\..\..\Users\Dave\Documents\SDEV-435\SchedProj.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Forms\SchedProj.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\..\..\..\..\..\..\..\Users\Dave\Documents\SDEV-435\SchedProj.aspx.cs">
-      <DependentUpon>SchedProj.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\..\..\Users\Dave\Documents\SDEV-435\SchedProj.aspx.designer.cs">
-      <DependentUpon>SchedProj.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
@@ -111,6 +104,13 @@
     </Compile>
     <Compile Include="Forms\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SchedProj.aspx.cs">
+      <DependentUpon>SchedProj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\SchedProj.aspx.designer.cs">
+      <DependentUpon>SchedProj.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

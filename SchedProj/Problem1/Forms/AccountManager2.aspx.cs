@@ -8,8 +8,9 @@ namespace SWE346.Module5.Problem1.Forms
     /// <summary>
     /// Backing class of the Account Manager web form
     /// </summary>
-    public partial class AccountManager2 : System.Web.UI.Page {
-        protected AccountCollection Accounts { get; set;}
+    public partial class AccountManager2 : System.Web.UI.Page
+    {
+        protected AccountCollection Accounts { get; set; }
 
         protected void Page_Load(object sender, EventArgs e) {
             Accounts = GetAccounts();

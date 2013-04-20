@@ -13,3 +13,8 @@ C:\Users\Dave\Documents\SDEV-435\SchedProj\Problem1\obj\Debug\SWE346.Module5.Pro
 C:\Users\Dave\Documents\SDEV-435\SchedProj\Problem1\bin\SWE346.Module5.Problem1.dll
 C:\Users\Dave\Documents\SDEV-435\SchedProj\Problem1\bin\SWE346.Module5.Problem1.pdb
 C:\Users\Dave\Documents\SDEV-435\SchedProj\Problem1\obj\Debug\Problem1.csprojResolveAssemblyReference.cache
+C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Problem1\bin\SWE346.Module5.Problem1.dll
+C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Problem1\bin\SWE346.Module5.Problem1.pdb
+C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Problem1\obj\Debug\SWE346.Module5.Problem1.dll
+C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Problem1\obj\Debug\SWE346.Module5.Problem1.pdb
+C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Problem1\obj\Debug\Problem1.csprojResolveAssemblyReference.cache
