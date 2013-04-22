@@ -1,0 +1,8 @@
+C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Problem1\bin\SWE346.Module5.Problem1.dll
+C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Problem1\bin\SWE346.Module5.Problem1.pdb
+C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Problem1\obj\Debug\SWE346.Module5.Problem1.dll
+C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Problem1\obj\Debug\SWE346.Module5.Problem1.pdb
+C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Sched\bin\SWE346.SchedProj.Sched.dll
+C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Sched\bin\SWE346.SchedProj.Sched.pdb
+C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Sched\obj\Debug\SWE346.SchedProj.Sched.dll
+C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Sched\obj\Debug\SWE346.SchedProj.Sched.pdb
