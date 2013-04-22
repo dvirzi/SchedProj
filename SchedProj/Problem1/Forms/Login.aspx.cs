@@ -40,7 +40,8 @@ namespace SWE346.Module5.Problem1.Forms
         {
             try
             {
-                if (Request.QueryString["showhash"].Equals("true"))
+                string qs = Request.QueryString["showhash"];
+                if (!string.IsNullOrEmpty(qs) && qs.Equals("true"))
                 {
                     // enable hash calculator
                     TextBox1.Visible = true;
@@ -50,8 +51,10 @@ namespace SWE346.Module5.Problem1.Forms
                     Label4.Visible = true;
                 }
             }
-            catch (Exception ex) 
-            { }
+            catch (Exception ex)
+            {
+                Response.Write(ex.ToString());
+            }
         }
 
         protected bool AuthenticateUser(string uName, string uPass)
@@ -112,7 +115,7 @@ namespace SWE346.Module5.Problem1.Forms
             } // end if secure XML
             else if (RadioButtonList1.SelectedIndex == 2) // secure SQL DB
             {
-                //string mySQLDB = @"D:\Documents and Settings\212039854\My Documents\Docs\Champlain College\SWE-346-51\Week10\Login\assignment.solution\Problem1\Users.mdb";
+                // Now hard coded to this option
                 //Server.MapPath("~\App_Data");
                 string mySQLDB = Server.MapPath(@"~\App_Data\Users.mdb");
                 //string mySQLDB = @"C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Problem1\App_Data\Users.mdb";

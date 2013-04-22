@@ -7,7 +7,9 @@ namespace SWE346.Module5.Problem1
     {
         protected void Page_Load(object sender, System.EventArgs e)
         {
-            Response.Redirect("Forms/AccountManager.aspx");
+            //Response.Redirect("Forms/AccountManager.aspx");
+            Response.Redirect("Forms/AccountManager.aspx", false);
+            Context.ApplicationInstance.CompleteRequest();
         }
     }
 }

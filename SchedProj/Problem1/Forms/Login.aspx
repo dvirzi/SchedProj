@@ -43,12 +43,12 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    
-        </div>
+        <asp:Image ID="Image1" runat="server" ImageURL="images/clip-art-meeting-466232.jpg"></asp:Image>
+    </div>
     <p class="style1">
         <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="XX-Large" 
-            Text="Login"></asp:Label>
-    </p>
+            Text="Meeting Scheduling: Login"></asp:Label>
+    </p>        
     <p class="style2">
         <asp:Label ID="Label2" runat="server" Text="User Name"></asp:Label>
 &nbsp;&nbsp;&nbsp;

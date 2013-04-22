@@ -31,6 +31,33 @@ namespace SWE346.Module5.Problem1.Forms {
         protected global::System.Web.UI.WebControls.TextBox TextBoxLoginUser;
         
         /// <summary>
+        /// ButtonLogout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonLogout;
+        
+        /// <summary>
+        /// TextBoxMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxMsg;
+        
+        /// <summary>
+        /// ButtonMyInvites control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonMyInvites;
+        
+        /// <summary>
         /// DropDownList_UserName control.
         /// </summary>
         /// <remarks>

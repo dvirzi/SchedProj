@@ -14,6 +14,5 @@ C:\Users\Dave\Documents\SDEV-435\SchedProj\NameComposite\obj\Debug\NameComposite
 C:\Users\Dave\Documents\SDEV-435\SchedProj\NameComposite\obj\Debug\NameComposite.pdb
 C:\Users\Dave\Documents\git_tutorial\work\SchedProj\NameComposite\bin\Debug\NameComposite.dll
 C:\Users\Dave\Documents\git_tutorial\work\SchedProj\NameComposite\bin\Debug\NameComposite.pdb
-C:\Users\Dave\Documents\git_tutorial\work\SchedProj\NameComposite\obj\Debug\NameComposite.csprojResolveAssemblyReference.cache
 C:\Users\Dave\Documents\git_tutorial\work\SchedProj\NameComposite\obj\Debug\NameComposite.dll
 C:\Users\Dave\Documents\git_tutorial\work\SchedProj\NameComposite\obj\Debug\NameComposite.pdb

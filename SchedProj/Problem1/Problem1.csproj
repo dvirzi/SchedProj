@@ -66,6 +66,7 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Forms\SchedProj.aspx" />
+    <Content Include="Forms\Invites.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -111,6 +112,13 @@
     </Compile>
     <Compile Include="Forms\SchedProj.aspx.designer.cs">
       <DependentUpon>SchedProj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Invites.aspx.cs">
+      <DependentUpon>Invites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Invites.aspx.designer.cs">
+      <DependentUpon>Invites.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

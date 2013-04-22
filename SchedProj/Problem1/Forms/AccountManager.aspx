@@ -7,13 +7,19 @@
     </head>
 <body>
     <form id="Form1" method="post" runat="server">
-    <p align="center" style="font-size: x-large; color: #0000FF; font-weight: bold;">
-        <asp:TextBox ID="TextBoxLoginUser" runat="server" BorderStyle="None" Font-Size="Large" style="font-weight:bold;"
-             Font-Name="Times New Roman" Font-Names="Times New Roman"></asp:TextBox>
-    </p>
         <p align="center" style="font-size: x-large; color: #0000FF; font-weight: bold;">
-        Schedule an Appointment<br />
-    </p>
+            Schedule a Meeting<br />
+        </p>
+        <p align="center" style="font-size: x-large; color: #0000FF; font-weight: bold; margin-left: 40px;">
+            <asp:TextBox ID="TextBoxLoginUser" runat="server" BorderStyle="None" Font-Size="Large" style="font-weight:bold;"
+                 Font-Name="Times New Roman" Font-Names="Times New Roman" Width="182px" ReadOnly="True"></asp:TextBox>
+            &nbsp;&nbsp;&nbsp;
+            <asp:Button ID="ButtonLogout" runat="server" Text="Logout" OnClick="ButtonLogout_Click" />
+        </p>
+            <p align="center" style="font-size: x-large; color: #0000FF; font-weight: bold; margin-left: 40px;">
+                <asp:TextBox ID="TextBoxMsg" runat="server" BorderStyle="None" Font-Names="Times New Roman" Font-Size="Large" ReadOnly="True"></asp:TextBox>
+            <asp:Button ID="ButtonMyInvites" runat="server" Text="My Invites" OnClick="ButtonMyInvites_Click" />
+        </p>
       <div style="text-align: center">
           <p style="font-size: medium; font-weight: bold;">
                Choose Attendee&nbsp;&nbsp;&nbsp;&nbsp;<asp:DropDownList ID="DropDownList_UserName" runat="server"
@@ -36,7 +42,7 @@
                      OnSelectedIndexChanged="DropDownList_Date_SelectedIndexChanged">
                 </asp:DropDownList>
             </p>
-            <asp:Button ID="Button1" runat="server" Text="Confirm" OnClick="btnCreate_Click"></asp:Button>
+            <asp:Button ID="Button1" runat="server" Text="Send Invite" OnClick="btnCreate_Click"></asp:Button>
         </div>
         <div style="text-align: center">
             <p style="font-size: medium; height: 43px; margin-top: -10px;
@@ -227,7 +233,7 @@
                 </SelectParameters>
             </asp:AccessDataSource>
             <asp:AccessDataSource ID="AccessDataSource3" runat="server" DataFile="~\App_Data\users.mdb"
-                 SelectCommand="SELECT User_, AvailDate_, AvailArray_, A08, A09, A10, A11, A12, A13, A14, A15, A16, A17, Format(AvailDate_, 'dd-mmm-yyyy') AS DateAvail FROM UserAvail WHERE (User_ = UName) AND (AvailDate_ = CDate(SearchDate))">
+                 SelectCommand="SELECT User_, AvailDate_, A08, A09, A10, A11, A12, A13, A14, A15, A16, A17, Format(AvailDate_, 'dd-mmm-yyyy') AS DateAvail FROM UserAvail WHERE (User_ = UName) AND (AvailDate_ = CDate(SearchDate))">
                 <SelectParameters>
                     <asp:ControlParameter ControlID="DropDownList_UserName" Name="UName" PropertyName="SelectedValue" DefaultValue="" />
                     <asp:ControlParameter ControlID="DropDownList_Date" DefaultValue="" Name="SearchDate" PropertyName="SelectedValue" />
