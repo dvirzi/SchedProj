@@ -24,25 +24,26 @@
           <p style="font-size: medium; font-weight: bold;">
                Choose Attendee&nbsp;&nbsp;&nbsp;&nbsp;<asp:DropDownList ID="DropDownList_UserName" runat="server"
                  DataSourceID="SqlDataSource1" DataTextField="UserName" DataValueField=""
-                 style=" 45px" OnSelectedIndexChanged="DropDownList_UserName_SelectedIndexChanged" AutoPostBack="True">
+                 style=" 45px" AutoPostBack="True">
             </asp:DropDownList>
           </p>
             <p style="font-size: medium; font-weight: bold;">
                 Choose A Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:DropDownList ID="DropDownList_RoomName"
                      runat="server" DataSourceID="AccessDataSource1"
-                     DataTextField="RoomName" DataValueField="RoomName" AutoPostBack="True"
-                     OnSelectedIndexChanged="DropDownList_RoomName_SelectedIndexChanged"
-                     OnTextChanged="DropDownList_RoomName_TextChanged">
+                     DataTextField="RoomName" DataValueField="RoomName" AutoPostBack="True">
                 </asp:DropDownList>
             </p>
             <p style="font-size: medium; font-weight: bold;">
                 Choose a Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
                 <asp:DropDownList ID="DropDownList_Date" runat="server" DataSourceID="AccessDataSource_UAvailDate"
-                     AutoPostBack="True" DataTextField="DateAvail" DataValueField="AvailDate_"
-                     OnSelectedIndexChanged="DropDownList_Date_SelectedIndexChanged">
+                     AutoPostBack="True" DataTextField="DateAvail" DataValueField="AvailDate_">
                 </asp:DropDownList>
             </p>
-            <asp:Button ID="Button1" runat="server" Text="Send Invite" OnClick="btnCreate_Click"></asp:Button>
+          <p style="font-size: medium; font-weight: bold;">
+                <asp:Label ID="Label1" runat="server" Text="Add Comments: &amp;nbsp;  &amp;nbsp;  &amp;nbsp;     "></asp:Label>
+                <asp:TextBox ID="TextBoxComments" runat="server" MaxLength="50" Width="316px"></asp:TextBox>
+            </p>
+            <asp:Button ID="ButtonInvite" runat="server" Text="Send Invite" OnClick="btnInvite_Click"></asp:Button>
         </div>
         <div style="text-align: center">
             <p style="font-size: medium; height: 43px; margin-top: -10px;
@@ -173,7 +174,7 @@
             <asp:Label runat="server" ID="lbl"
                 Text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose A Time:&nbsp;&nbsp;&nbsp;" />
             <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatLayout="Flow" align="center"
-                RepeatDirection="Horizontal" CellSpacing="80" Height="6px" Width="863px" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged">
+                RepeatDirection="Horizontal" CellSpacing="80" Height="6px" Width="863px">
                 <asp:ListItem Text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" Value="08"></asp:ListItem>
                 <asp:ListItem Text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" Value="09"></asp:ListItem>
                 <asp:ListItem Text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" Value="10"></asp:ListItem>
@@ -213,8 +214,7 @@
             <br />
             <br />
         </div>
-            <br />
-            <asp:Button ID="btnCreate" runat="server" Text="Confirm" OnClick="btnCreate_Click"></asp:Button>
+            <br />            
             <br />
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
                     ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>"

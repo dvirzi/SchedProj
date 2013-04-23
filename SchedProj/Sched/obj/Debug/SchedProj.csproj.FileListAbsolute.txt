@@ -6,3 +6,4 @@ C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Sched\bin\SWE346.SchedProj.S
 C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Sched\bin\SWE346.SchedProj.Sched.pdb
 C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Sched\obj\Debug\SWE346.SchedProj.Sched.dll
 C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Sched\obj\Debug\SWE346.SchedProj.Sched.pdb
+C:\Users\Dave\Documents\git_tutorial\work\SchedProj\Sched\obj\Debug\SchedProj.csprojResolveAssemblyReference.cache

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace work.SchedProj.Sched.Forms {
+namespace work.SchedProj.Sched {
     
     
     public partial class Default {

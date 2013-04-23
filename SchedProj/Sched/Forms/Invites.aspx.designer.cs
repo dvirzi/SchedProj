@@ -58,6 +58,33 @@ namespace work.SchedProj.Sched.Forms {
         protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
+        /// LabelMyReturns control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelMyReturns;
+        
+        /// <summary>
+        /// ButtonBack2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonBack2;
+        
+        /// <summary>
+        /// GridView2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView2;
+        
+        /// <summary>
         /// AccessDataSource_Invites control.
         /// </summary>
         /// <remarks>
@@ -65,5 +92,14 @@ namespace work.SchedProj.Sched.Forms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.AccessDataSource AccessDataSource_Invites;
+        
+        /// <summary>
+        /// AccessDataSourceReturn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.AccessDataSource AccessDataSourceReturn;
     }
 }

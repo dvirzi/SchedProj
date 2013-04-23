@@ -39,52 +39,12 @@ namespace work.SchedProj.Sched.Forms
                 DataBind();
         }
 
-        /// <summary>
-        /// Event handler for the Item Command
-        /// </summary>
-        ///<remarks>
-        /// This command is used to drive sorting
-        ///</remarks>
-
-        protected void DropDownList_RoomName_SelectedIndexChanged(object sender, System.EventArgs e)
-        {
-           // CheckBoxList1.DataBind();
-        }
-
-        protected void DropDownList_RoomName_TextChanged(object sender, System.EventArgs e)
-        {
-            //CheckBoxList1.DataBind();
-        }
-
-        protected void CheckBoxList1_SelectedIndexChanged(object sender, System.EventArgs e)
-        {
-
-        }
-
-        protected void DropDownList_Date_SelectedIndexChanged(object sender, System.EventArgs e)
-        {
-            //string ss = DropDownList_Date.Text;
-            //AccessDataSource3.DataBind();
-            //GridView1.DataBind();
-            //TextBox1.Text = DropDownList_Date.SelectedValue;
-        }
-
-        protected void DropDownList_UserName_SelectedIndexChanged(object sender, System.EventArgs e)
-        {
-            //AccessDataSource3.DataBind();
-            //DropDownList_Date.DataBind();
-        }
-
-        protected void RadioButtonList1_SelectedIndexChanged(object sender, System.EventArgs e)
-        {
-        }
 
         /// <summary>
-        /// Event handler for the create button
+        /// Event handler for the Invite button
         /// </summary>
-        protected void btnCreate_Click(object sender, System.EventArgs e)
+        protected void btnInvite_Click(object sender, System.EventArgs e)
         {
-            //string SelDate = (string) DropDownList_Date.SelectedItem.Text;
             if ((GridViewRoom.Rows.Count == 0) || (GridView1.Rows.Count == 0))
             {
                 string gvMsg = "alert('Please choose a Room and Guest with an available open Date.');";
@@ -111,19 +71,33 @@ namespace work.SchedProj.Sched.Forms
                 System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Test", TmMsg, true);
                 return;
             }
-            insertNewRequest(Invitee, loginuser, SelDate + " " + SelTime, Resource, "New");
+            string Comments = TextBoxComments.Text;
+            insertNewRequest(Invitee, loginuser, SelDate + " " + SelTime, Resource, "New", Comments);
+            reserveRoom(Resource, SelDate + " " + SelTime, false);
+            reserveUser(loginuser, SelDate + " " + SelTime, false);
             string msg = "Request from " + loginuser + " to " + Invitee + " to meet in " + Resource;
             msg = msg + " at " + SelTime + " on " + SelDate + ".";
             string script = "alert('" + msg + "');";
             System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Test", script, true);
-        } // btnCreate_Click
+        } // btnInvite_Click
+
+        protected void reserveRoom(string resource, string datetime, bool newval)
+        {
+            // RoomAvail.Room, AvailDate, Rnn field set to newval (True if available, False if reserved).
+        }
+
+        protected void reserveUser(string user, string datetime, bool newval)
+        {
+            // UserAvail.User_, AvailDate_, Ann field set to newval (True if available, False if reserved).
+        }
 
         protected void insertNewRequest(
-              string Attendee,
-              string Requestor,
-              string TimeDate,
-              string Resource,
-              string Status)
+            string Attendee,
+            string Requestor,
+            string TimeDate,
+            string Resource,
+            string Status,
+            string Comments)
         {
             // Add a new row to the Invites table.
             // Create a new index and populate fields with the parameters passed in.
@@ -153,9 +127,9 @@ namespace work.SchedProj.Sched.Forms
 
                     // Create new row with next index number and passed in data.
                     newIndex = newIndex + 1;
-                    string insquery = @"INSERT INTO Invites (InvNum, Attendee, Requestor, TimeDate, Resource, Status)" +
+                    string insquery = @"INSERT INTO Invites (InvNum, Attendee, Requestor, TimeDate, Resource, Status, Comments)" +
                         " VALUES ('" + newIndex + "', '" + Attendee + "', '" + Requestor + "', '" + TimeDate +
-                            "', '" + Resource + "', '" + Status + "');";
+                            "', '" + Resource + "', '" + Status + "', '" + Comments + "');";
                     OleDbCommand cmd = new OleDbCommand();
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = insquery;
